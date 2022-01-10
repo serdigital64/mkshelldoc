@@ -9,3 +9,13 @@
 
 # package builds for prod/dev/test
 dist/
+build/
+
+# python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+.eggs/
+.tox

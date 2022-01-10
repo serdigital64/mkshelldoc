@@ -1,7 +1,0 @@
-README.md
-pyproject.toml
-setup.cfg
-src/mkshelldoc_serdigital64.egg-info/PKG-INFO
-src/mkshelldoc_serdigital64.egg-info/SOURCES.txt
-src/mkshelldoc_serdigital64.egg-info/dependency_links.txt
-src/mkshelldoc_serdigital64.egg-info/top_level.txt
