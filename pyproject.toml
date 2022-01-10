@@ -1,6 +1,105 @@
-[build-system]
-requires = [
-    "setuptools>=42",
-    "wheel"
+[tool]
+[tool.poetry]
+name = "mkshelldoc"
+version = "0.1.0"
+homepage = "https://github.com/serdigital64/mkshelldoc"
+license =  "GPL-3.0-only"
+
+description = "Documentation generator for shell scripts"
+authors = ["SerDigital64 <serdigital64@gmail.com>"]
+packages = [
+    { include = "mkshelldoc" },
+    { include = "tests", format = "sdist" },
 ]
-build-backend = "setuptools.build_meta"
+classifiers=[
+    'Development Status :: 2 - Pre-Alpha',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
+    'Natural Language :: English',
+    'Programming Language :: Python :: 3.9',
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+mkdocs = {version = "^1.2.3", extras = ["doc"]}
+tox = {version = "^3.24.5", extras = ["dev"]}
+pytest = {version = "^6.2.5", extras = ["test"]}
+black = {version = "^21.12b0", extras = ["test"]}
+isort = {version = "^5.10.1", extras = ["test"]}
+flake8 = {version = "^4.0.1", extras = ["test"]}
+pytest-cov = {version = "^3.0.0", extras = ["test"]}
+flake8-docstrings = {version = "^1.6.0", extras = ["test"]}
+pre-commit = {version = "^2.16.0", extras = ["dev"]}
+virtualenv = {version = "^20.13.0", extras = ["dev"]}
+pip = {version = "^21.3.1", extras = ["dev"]}
+twine = {version = "^3.7.1", extras = ["dev"]}
+toml = {version = "^0.10.2", extras = ["dev"]}
+mkdocs-include-markdown-plugin = {version = "^3.2.3", extras = ["doc"]}
+mkdocs-material = {version = "^8.1.5", extras = ["doc"]}
+mkdocstrings = {version = "^0.17.0", extras = ["doc"]}
+mkdocs-autorefs = {version = "^0.3.1", extras = ["doc"]}
+mkdocs-awesome-pages-plugin = {version = "^2.6.1", extras = ["doc"]}
+mdx-truly-sane-lists = {version = "^1.2", extras = ["doc"]}
+mkdocs-mermaid2-plugin = {version = "^0.5.2", extras = ["doc"]}
+mkdocs-markmap = {version = "^2.2.0", extras = ["doc"]}
+mkdocs-minify-plugin = {version = "^0.5.0", extras = ["doc"]}
+pymdown-extensions = {version = "^9.1", extras = ["doc"]}
+Pygments = {version = "^2.11.2", extras = ["doc"]}
+Markdown = {version = "^3.3.6", extras = ["doc"]}
+click = "^8.0.3"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.extras]
+test = [
+    "pytest",
+    "black",
+    "isort",
+    "flake8",
+    "flake8-docstrings",
+    "pytest-cov"
+    ]
+dev = [
+    "tox",
+    "pre-commit",
+    "virtualenv",
+    "pip",
+    "twine",
+    "toml"]
+doc = [
+    "mkdocs",
+    "mkdocs-include-markdown-plugin",
+    "mkdocs-material",
+    "mkdocstrings",
+    "mkdocs-autorefs",
+    "mkdocs-awesome-pages-plugin",
+    "mdx-truly-sane-lists",
+    "mkdocs-mermaid2-plugin",
+    "mkdocs-markmap",
+    "mkdocs-minify-plugin",
+    "pymdown-extensions",
+    "Pygments",
+    "Markdown"
+    ]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
