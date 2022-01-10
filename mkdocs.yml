@@ -1,6 +1,6 @@
 ---
 site_name: "MkShellDoc Project"
-site_description: "X_PROJECT_SHORT_DESCRIPTION_X"
+site_description: "Documentation generator for shell scripts"
 site_author: "SerDigital64"
 
 site_url: "https://serdigital64.github.io/mkshelldoc"

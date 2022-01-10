@@ -2,9 +2,7 @@
 
 ## Overview
 
-X_PROJECT_INFO_X
-
-X_PROJECT_DESCRIPTION_X
+Documentation generator for shell scripts
 
 ## Usage
 
@@ -22,8 +20,6 @@ X_PROJECT_DESCRIPTION_X
 
 - Project GIT repository: [https://serdigital64.github.io/mkshelldoc](https://serdigital64.github.io/mkshelldoc)
 - Project Documentation: [https://github.com/serdigital64/mkshelldoc](https://github.com/serdigital64/mkshelldoc)
-
-### Releases
 
 ### Contributing
 
