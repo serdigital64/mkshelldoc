@@ -103,3 +103,6 @@ exclude = '''
   | dist
 )/
 '''
+
+[tool.poetry.scripts]
+poetry = 'mkshelldoc.cli:run'

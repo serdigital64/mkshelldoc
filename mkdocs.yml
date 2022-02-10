@@ -23,9 +23,9 @@ plugins:
   - search:
       lang: "en"
   - include-markdown:
-  - mkdocstrings:
-      watch:
-        - "mkshelldoc"
+  # - mkdocstrings:
+      # watch:
+      #   - "mkshelldoc"
   - minify:
       minify_html: true
       htmlmin_opts:
