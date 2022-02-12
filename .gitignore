@@ -34,3 +34,5 @@ __pycache__/
 *.egg
 .eggs/
 .tox
+
+poetry.lock
