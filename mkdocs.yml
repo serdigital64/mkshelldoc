@@ -8,7 +8,7 @@ repo_url: "https://github.com/serdigital64/mkshelldoc"
 
 copyright: "GPL-3.0-or-later"
 docs_dir: "mkdocs"
-site_dir: "docs"
+site_dir: "build/docs"
 strict: false
 
 extra:
@@ -23,9 +23,9 @@ plugins:
   - search:
       lang: "en"
   - include-markdown:
-  - mkdocstrings:
-      watch:
-        - "mkshelldoc"
+  # - mkdocstrings:
+      # watch:
+      #   - "mkshelldoc"
   - minify:
       minify_html: true
       htmlmin_opts:
